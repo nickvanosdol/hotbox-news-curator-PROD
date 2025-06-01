@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased bg-neutral-50`}>
         {children}
         <div
-          className="pointer-events-none fixed inset-0 -z-1 opacity-50"
+          className="pointer-events-none fixed inset-0 -z-1 opacity-35"
           style={{
             backgroundImage: 'url("/svg/noise.svg")',
             backgroundRepeat: 'repeat',

@@ -48,7 +48,7 @@ function NewsGrid() {
               Brett Cornick
             </UnderlineLink>
           </p>
-          <p className="mt-4 text-lg/8 shadow-xs rounded-lg border border-[var(--color-primary-100)] text-gray-700 text-left bg-[var(--color-primary-50)] py-2 px-4 flex flex-wrap gap-0">
+          <p className="mt-6 mx-4 lg:mx-0 text-lg/8 border-gray-400 border-b-1 text-gray-800 text-left pb-4 px-1 flex flex-wrap gap-0">
             <span className="font-bold">Today&apos;s hotbox:</span>{' '}
             {words.map((word, idx) => (
               <span
