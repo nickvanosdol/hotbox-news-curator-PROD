@@ -28,11 +28,10 @@ function NewsGrid() {
             />
           </div>
           <p className="mt-2 text-sm inline-flex gap-1">
-            A reader-curated newsfeed from{' '}
+            A reader-curated newsfeed from
             <UnderlineLink href="https://subscribe.keepcool.co">
-              Keep Cool
+              Keep Cool.
             </UnderlineLink>
-            .
           </p>
           <p className="mt-8">
             {new Date().toLocaleString('en-US', {
@@ -83,7 +82,7 @@ function NewsGrid() {
                     className="text-gray-500">
                     {article.date}
                   </time>
-                  <div className="relative z-10 rounded-md bg-gray-100 px-3 py-1.5 font-medium text-gray-600 group-hover:bg-[var(--color-primary-100)]">
+                  <div className="relative z-10 rounded-md bg-[var(--color-primary-100)] lg:bg-gray-100 px-3 py-1.5 font-medium text-gray-600 group-hover:bg-[var(--color-primary-100)]">
                     {article.tag}
                   </div>
                 </div>
