@@ -12,7 +12,7 @@ const words = paragraph.split(' ');
 
 function NewsGrid() {
   return (
-    <div className="bg-white py-4 sm:py-4">
+    <div className="py-4 sm:py-4">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center min-w-full">
           <div className="flex justify-center gap-2">
@@ -27,7 +27,7 @@ function NewsGrid() {
               alt="Icon"
             />
           </div>
-          <p className="mt-2 text-sm">
+          <p className="mt-2 text-sm inline-flex gap-1">
             A reader-curated newsfeed from{' '}
             <UnderlineLink href="https://subscribe.keepcool.co">
               Keep Cool
@@ -42,7 +42,9 @@ function NewsGrid() {
               day: 'numeric',
             })}{' '}
             | Curated today by:{' '}
-            <UnderlineLink href="https://www.linkedin.com/in/brettcornick/">
+            <UnderlineLink
+              className="inline-flex"
+              href="https://www.linkedin.com/in/brettcornick/">
               Brett Cornick
             </UnderlineLink>
           </p>

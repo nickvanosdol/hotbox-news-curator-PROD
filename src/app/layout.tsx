@@ -19,7 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased `}>{children}</body>
+      <body className={`${inter.variable} antialiased bg-gray-100`}>
+        {children}
+        <div
+          className="pointer-events-none fixed inset-0 -z-1 opacity-20"
+          style={{
+            backgroundImage: 'url("/svg/noise.svg")',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '182px 182px',
+          }}
+          aria-hidden="true"
+        />
+      </body>
     </html>
   );
 }
