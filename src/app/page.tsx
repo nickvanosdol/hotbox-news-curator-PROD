@@ -10,7 +10,7 @@ const paragraph =
   " [ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
 const words = paragraph.split(' ');
 
-export function NewsGrid() {
+function NewsGrid() {
   return (
     <div className="bg-white py-4 sm:py-4">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
