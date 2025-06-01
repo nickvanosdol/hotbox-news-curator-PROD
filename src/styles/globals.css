@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@config "../../tailwind.config.ts";
+
+:root {
+  /* #region  /**=========== Primary Color =========== */
+  --tw-color-primary-50: 255 247 237;
+  --tw-color-primary-100: 255 237 213;
+  --tw-color-primary-200: 254 215 170;
+  --tw-color-primary-300: 253 186 116;
+  --tw-color-primary-400: 251 146 60;
+  --tw-color-primary-500: 249 115 22;
+  --tw-color-primary-600: 234 88 12;
+  --tw-color-primary-700: 194 65 12;
+  --tw-color-primary-800: 154 52 18;
+  --tw-color-primary-900: 124 45 18;
+  --tw-color-primary-950: 67 20 7;
+  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #fff7ed */
+  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #ffedd5 */
+  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #fed7aa */
+  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #fdba74 */
+  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #fb923c */
+  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #f97316 */
+  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #ea580c */
+  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #c2410c */
+  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #9a3412 */
+  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #7c2d12 */
+  --color-primary-950: rgb(var(--tw-color-primary-950)); /* #431407 */
+  /* #endregion  /**======== Primary Color =========== */
+
+  cursor: url('/cursors/fire.png') 10 10, default;
+}
+
+.cursor-newtab {
+  cursor: url('/cursors/new-tab.png') 10 10, pointer;
+}
+
+.layout {
+  max-width: 68.75rem;
+  @apply mx-auto w-11/12;
+}
+
+.animated-highlight {
+  background-image: linear-gradient(#33333300, #33333300),
+    linear-gradient(to right, var(--color-primary-50), var(--color-primary-200));
+  background-size: 100% 15px, 0 15px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animated-highlight {
+    transition: 0.3s ease;
+    transition-property: background-size, color, background-color, border-color;
+  }
+}
+
+.animated-highlight:hover,
+.animated-highlight:focus-visible {
+  background-size: 0 15px, 100% 15px;
+}
