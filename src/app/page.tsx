@@ -88,7 +88,7 @@ function NewsGrid() {
                   </div>
                 </div>
                 <div className="relative">
-                  <h3 className="mt-1 flex text-lg/6 font-semibold text-gray-900 items-center gap-2 grayscale group-hover:grayscale-0 group-focus:grayscale-0">
+                  <h3 className="mt-1 flex text-lg/6 font-semibold text-gray-900 items-center gap-2 lg:grayscale group-hover:grayscale-0 group-focus:grayscale-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       alt="article link favicon"
