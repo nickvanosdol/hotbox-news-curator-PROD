@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@config "../../tailwind.config.ts";
+@config "../../tailwind.config.js";
 
 :root {
   /* #region  /**=========== Primary Color =========== */
@@ -26,7 +26,14 @@
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #7c2d12 */
   --color-primary-950: rgb(var(--tw-color-primary-950)); /* #431407 */
   /* #endregion  /**======== Primary Color =========== */
+}
 
+button:not([disabled]),
+[role='button']:not([disabled]) {
+  cursor: pointer;
+}
+
+.cursor-fire {
   cursor: url('/cursors/fire.png') 10 10, default;
 }
 

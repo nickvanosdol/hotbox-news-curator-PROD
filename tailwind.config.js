@@ -1,7 +1,14 @@
-// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
+      //   cursor: {
+      //     fire: 'url(/cursors/fire.png), 10 10, default',
+      //     newtab: 'url(/cursors/new-tab.png), 10 10, pointer',
+      //   },
+      fontFamily: {
+        specialElite: ['var(--font-special-elite)'],
+        inter: ['var(--font-inter)'],
+      },
       keyframes: {
         appear: {
           '0%': { opacity: '0' },
@@ -13,7 +20,6 @@ module.exports = {
       },
     },
   },
-  // Make sure your content paths are correct for Next.js
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   plugins: [],
 };

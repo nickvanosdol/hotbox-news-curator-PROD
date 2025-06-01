@@ -1,6 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Special_Elite } from 'next/font/google';
 import '@/styles/globals.css';
+
+const specialElite = Special_Elite({
+  variable: '--font-special-elite',
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 const inter = Inter({
   variable: '--font-inter',
@@ -19,10 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased bg-neutral-50`}>
+      <body
+        className={`${specialElite.variable} ${inter.variable} antialiased bg-neutral-50`}>
         {children}
         <div
-          className="pointer-events-none fixed inset-0 -z-1 opacity-35"
+          className="pointer-events-none fixed inset-0 -z-10 opacity-35"
           style={{
             backgroundImage: 'url("/svg/noise.svg")',
             backgroundRepeat: 'repeat',

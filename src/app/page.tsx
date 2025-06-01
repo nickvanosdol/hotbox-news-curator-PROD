@@ -13,11 +13,11 @@ const words = paragraph.split(' ');
 
 function NewsGrid() {
   return (
-    <div className="py-4 sm:py-4">
+    <div className="py-4 sm:py-4 font-inter">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center min-w-full">
-          <div className="flex justify-center gap-2">
-            <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl ml-10 sm:ml-14">
+          <div className="flex items-center justify-center gap-2">
+            <h2 className="text-4xl mt-3 font-semibold font-special-elite tracking-tight text-balance text-gray-900 sm:text-5xl ml-10 sm:ml-14">
               [ hotbox ]{' '}
             </h2>
             <Image
