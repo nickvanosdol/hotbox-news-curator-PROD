@@ -5,6 +5,7 @@ import UnderlineLink from '@/components/UnderlineLink';
 import Head from 'next/head';
 import PartyCounter from '@/components/PartyCounter';
 import Footer from '@/components/Footer';
+import ReactionCounter from '@/components/ReactionCounter';
 
 const paragraph =
   "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
@@ -47,7 +48,7 @@ function NewsGrid() {
               Brett Cornick
             </UnderlineLink>
           </p>
-          <p className="mt-4 text-lg/8 rounded-md border border-[var(--color-primary-500)] text-gray-700 text-left bg-[var(--color-primary-100)] py-2 px-4 flex flex-wrap gap-0">
+          <p className="mt-4 text-lg/8 rounded-lg border border-[var(--color-primary-100)] text-gray-700 text-left bg-[var(--color-primary-50)] py-2 px-4 flex flex-wrap gap-0">
             <span className="font-bold">Today&apos;s hotbox:</span>{' '}
             {words.map((word, idx) => (
               <span
@@ -82,7 +83,7 @@ function NewsGrid() {
                     className="text-gray-500">
                     {article.date}
                   </time>
-                  <div className="relative z-10 rounded-md bg-[var(--color-primary-100)] lg:bg-gray-100 px-3 py-1.5 font-medium text-gray-600 group-hover:bg-[var(--color-primary-100)]">
+                  <div className="relative z-10 bg-[var(--color-primary-50)] rounded-lg px-3 py-1.5 font-medium text-gray-600 group-hover:bg-[var(--color-primary-100)]">
                     {article.tag}
                   </div>
                 </div>
@@ -103,6 +104,7 @@ function NewsGrid() {
                 <p className="mt-2 line-clamp-2 text-sm/6 text-gray-600">
                   {article.description}
                 </p>
+                <ReactionCounter />
                 {/* <div className='relative mt-8 flex items-center gap-x-4'>
                   <img
                     alt=''
