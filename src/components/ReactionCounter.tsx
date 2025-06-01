@@ -12,7 +12,7 @@ export default function ReactionCounter() {
   return (
     <button
       onClick={handleClick}
-      className="py-1 px-3 mt-2 shadow-sm rounded-full bg-[var(--color-primary-50)] hover:shadow-none cursor-pointer focus:shadow-none">
+      className="py-1 px-3 mt-2 shadow-sm rounded-lg bg-[var(--color-primary-50)] hover:shadow-none cursor-pointer focus:shadow-none">
       🔥 {count}
     </button>
   );
