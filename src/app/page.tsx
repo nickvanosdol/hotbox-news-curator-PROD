@@ -82,17 +82,17 @@ export default function Home() {
               [ hotbox ]{' '}
             </h2>
           </div>
-          <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] inline-flex gap-1">
-            A reader-curated newsfeed from
-            <Link
+          <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] px-2">
+            A reader-curated newsfeed from{' '}
+            <a
               href="https://subscribe.keepcool.co"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]">
               Keep Cool.
-            </Link>
+            </a>
           </p>
-          <p className="mt-8 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-[var(--color-secondary-bg)]">
+          <p className="mt-8 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-[var(--color-secondary-bg)] px-2">
             {new Date().toLocaleString('en-US', {
               weekday: 'long',
               year: 'numeric',
@@ -108,7 +108,7 @@ export default function Home() {
               Brett Cornick
             </Link>
           </p>
-          <div className="mt-6 mb-8 mx-4 relative layout lg:mx-0 text-lg/8 rounded-tl-3xl rounded-br-3xl shadow-xl text-[var(--color-primary-text)] border-2 p-6 bg-[var(--color-secondary-bg)] text-left flex flex-wrap gap-0">
+          <div className="mt-6 mb-8 mx-2 relative layout lg:mx-0 text-lg/8 rounded-tl-3xl rounded-br-3xl shadow-xl text-[var(--color-primary-text)] border-2 p-6 bg-[var(--color-secondary-bg)] text-left flex flex-wrap gap-0">
             <div
               className="pointer-events-none absolute bottom-0 top-0 left-0 right-0 opacity-40"
               style={{
