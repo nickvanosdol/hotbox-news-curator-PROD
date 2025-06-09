@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter, Special_Elite } from 'next/font/google';
+import { Inter, Chewy } from 'next/font/google';
 import '@/styles/globals.css';
 
-const specialElite = Special_Elite({
-  variable: '--font-special-elite',
+const chewy = Chewy({
+  variable: '--font-chewy',
   subsets: ['latin'],
   weight: ['400'],
 });
@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${specialElite.variable} ${inter.variable} antialiased bg-neutral-50`}>
+        className={`${chewy.variable} ${inter.variable} antialiased bg-gradient-to-t to-[var(--color-primary-bg)] from-[#A22700]`}>
         {children}
-        <div
+        {/* <div
           className="pointer-events-none fixed inset-0 -z-10 opacity-35"
           style={{
             backgroundImage: 'url("/svg/noise.svg")',
@@ -36,7 +36,7 @@ export default function RootLayout({
             backgroundSize: '182px 182px',
           }}
           aria-hidden="true"
-        />
+        /> */}
       </body>
     </html>
   );

@@ -1,11 +1,13 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { articles } from './constant/feed-content';
 import UnderlineLink from '@/components/UnderlineLink';
 import Head from 'next/head';
-import PartyCounter from '@/components/PartyCounter';
+// import PartyCounter from '@/components/PartyCounter';
 import Footer from '@/components/Footer';
-import ReactionCounter from '@/components/ReactionCounter';
+import Link from 'next/link';
+import FireBanner from '@/components/FireBanner';
+// import ReactionCounter from '@/components/ReactionCounter';
 
 const paragraph =
   "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
@@ -13,57 +15,18 @@ const words = paragraph.split(' ');
 
 function NewsGrid() {
   return (
-    <div className="py-4 sm:py-4 font-inter">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center min-w-full">
-          <div className="flex items-center justify-center gap-2">
-            <h2 className="text-4xl mt-3 font-semibold font-special-elite tracking-tight text-balance text-gray-900 sm:text-5xl ml-10 sm:ml-14">
-              [ hotbox ]{' '}
-            </h2>
-            <Image
-              className="w-10 sm:w-14 inline-block"
-              src="/svg/match.svg"
-              width="100"
-              height="100"
-              alt="Icon"
-            />
-          </div>
-          <p className="mt-2 text-sm inline-flex gap-1">
-            A reader-curated newsfeed from
-            <UnderlineLink href="https://subscribe.keepcool.co">
-              Keep Cool.
-            </UnderlineLink>
-          </p>
-          <p className="mt-8">
-            {new Date().toLocaleString('en-US', {
-              weekday: 'long',
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            })}{' '}
-            | Curated today by:{' '}
-            <UnderlineLink
-              className="inline-flex"
-              href="https://www.linkedin.com/in/brettcornick/">
-              Brett Cornick
-            </UnderlineLink>
-          </p>
-          <p className="mt-6 mx-4 layout lg:mx-0 text-lg/8 border-gray-400 border-b-1 text-gray-800 text-left pb-4 px-1 flex flex-wrap gap-0">
-            <span className="font-bold">Today&apos;s hotbox:</span>{' '}
-            {words.map((word, idx) => (
-              <span
-                key={idx}
-                className="opacity-0 animate-appear"
-                style={{
-                  animationDelay: `${idx * 0.05}s`,
-                  animationFillMode: 'forwards',
-                }}>
-                {word}&nbsp;
-              </span>
-            ))}
-          </p>
-        </div>
-        <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <div className="py-4 my-4 sm:py-4 font-inter">
+      <div className="mx-auto max-w-8xl px-6">
+        <div className="relative mx-auto p-5 rounded-tl-3xl shadow-xl rounded-br-3xl text-[var(--color-primary-text)] border-2 bg-[var(--color-secondary-bg)] border-[var(--color-border)] grid max-w-2xl grid-cols-1 gap-x-12 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div
+            className="pointer-events-none absolute bottom-0 top-0 left-0 right-0 opacity-40"
+            style={{
+              backgroundImage: 'url("/svg/noise.svg")',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '182px 182px',
+            }}
+            aria-hidden="true"
+          />
           {articles.map(article => (
             <article
               key={article.id}
@@ -80,15 +43,15 @@ function NewsGrid() {
                 <div className="mt-2 flex items-center gap-x-4 text-xs">
                   <time
                     dateTime={article.datetime}
-                    className="text-gray-500">
+                    className="text-[var(--color-secondary-text)]">
                     {article.date}
                   </time>
-                  <div className="relative z-10 bg-[var(--color-primary-50)] rounded-lg px-3 py-1.5 font-medium text-gray-600">
+                  <div className="relative z-10 border-1 rounded-md group-hover:shadow-sm group-hover:bg-[var(--color-accent-1)] shadow-md px-2 py-1 font-medium text-[var(--color-secondary-text)]">
                     {article.tag}
                   </div>
                 </div>
                 <div className="relative">
-                  <h3 className="mt-1 flex text-lg/6 font-semibold text-gray-900 items-center gap-2 lg:grayscale group-hover:grayscale-0 group-focus:grayscale-0">
+                  <h3 className="mt-1 flex text-lg/6 font-semibold text-[var(--color-primary-text)] items-center gap-2 lg:grayscale group-hover:grayscale-0 group-focus:grayscale-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       alt="article link favicon"
@@ -101,10 +64,10 @@ function NewsGrid() {
                     </UnderlineLink>
                   </h3>
                 </div>
-                <p className="mt-2 line-clamp-2 text-sm/6 text-gray-600">
+                <p className="mt-2 line-clamp-2 text-sm/6 text-[var(--color-secondary-text)]">
                   {article.description}
                 </p>
-                <ReactionCounter />
+                {/* <ReactionCounter /> */}
                 {/* <div className='relative mt-8 flex items-center gap-x-4'>
                   <img
                     alt=''
@@ -137,10 +100,123 @@ export default function Home() {
         <title>Hi</title>
       </Head>
       <section>
+        <div className="mx-auto max-w-2xl text-center min-w-full">
+          <div className="flex items-center justify-center gap-2">
+            <h2 className="hover:text-[var(--color-accent-1)] text-4xl mt-3 font-semibold tracking-widest text-[var(--color-secondary-bg)] text-shadow-[4px_4px_0px_rgba(22,23,20,1)] font-chewy text-balance sm:text-5xl">
+              [ hotbox ]{' '}
+            </h2>
+            {/* <Image
+              className="w-10 sm:w-14 inline-block"
+              src="/svg/match.svg"
+              width="100"
+              height="100"
+              alt="Icon"
+            /> */}
+          </div>
+          <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] inline-flex gap-1">
+            A reader-curated newsfeed from
+            <Link
+              href="https://subscribe.keepcool.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]">
+              Keep Cool.
+            </Link>
+          </p>
+          <p className="mt-8 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-[var(--color-secondary-bg)]">
+            {new Date().toLocaleString('en-US', {
+              weekday: 'long',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}{' '}
+            | Curated today by:{' '}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
+              href="https://www.linkedin.com/in/brettcornick/">
+              Brett Cornick
+            </Link>
+          </p>
+          <div className="mt-6 mb-8 mx-4 relative layout lg:mx-0 text-lg/8 rounded-tl-3xl rounded-br-3xl shadow-xl text-[var(--color-primary-text)] border-2 p-5 bg-[var(--color-secondary-bg)] text-left flex flex-wrap gap-0">
+            <div
+              className="pointer-events-none absolute bottom-0 top-0 left-0 right-0 opacity-40"
+              style={{
+                backgroundImage: 'url("/svg/noise.svg")',
+                backgroundRepeat: 'repeat',
+                backgroundSize: '182px 182px',
+              }}
+              aria-hidden="true"
+            />
+            <span className="font-bold">Today&apos;s hotbox:</span>{' '}
+            {words.map((word, idx) => (
+              <span
+                key={idx}
+                className="opacity-0 animate-appear"
+                style={{
+                  animationDelay: `${idx * 0.05}s`,
+                  animationFillMode: 'forwards',
+                }}>
+                {word}&nbsp;
+              </span>
+            ))}
+          </div>
+        </div>
+        <FireBanner
+          logoPaths={[
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire-alt.svg',
+            '/svg/cartoon-fire.svg',
+          ]}
+        />
         <NewsGrid />
+        {/* <FireBanner
+          logoPaths={[
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+            '/svg/cartoon-fire.svg',
+          ]}
+        /> */}
       </section>
       <Footer />
-      <PartyCounter />
+      {/* <PartyCounter /> */}
     </main>
   );
 }

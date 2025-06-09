@@ -6,7 +6,7 @@ module.exports = {
       //     newtab: 'url(/cursors/new-tab.png), 10 10, pointer',
       //   },
       fontFamily: {
-        specialElite: ['var(--font-special-elite)'],
+        chewy: ['var(--font-chewy)'],
         inter: ['var(--font-inter)'],
       },
       keyframes: {

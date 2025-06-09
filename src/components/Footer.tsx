@@ -1,20 +1,21 @@
-import UnderlineLink from './UnderlineLink';
+// import UnderlineLink from './UnderlineLink';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="layout mt-10 pt-2 border-t-1 border-gray-400 text-center text-sm mb-2 text-gray-500">
+    <footer className="layout mt-10 pt-2 border-t-1 border-[var(--color-secondary-bg)] font-semibold text-center text-sm mb-2 text-[var(--color-secondary-bg)]">
       © {new Date().getFullYear()} By{' '}
-      <UnderlineLink
-        className="inline-flex"
+      <Link
+        className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
         href="https://subscribe.keepcool.co">
         Keep Cool
-      </UnderlineLink>
+      </Link>
       . Site by{' '}
-      <UnderlineLink
-        className="inline-flex"
+      <Link
+        className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
         href="https://www.linkedin.com/in/brettcornick/">
         Brett Cornick
-      </UnderlineLink>
+      </Link>
       .
     </footer>
   );
