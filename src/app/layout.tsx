@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'hotbox',
+  title: '[ hotbox ]',
   description: 'A reader-curated newsfeed from Keep Cool.',
 };
 
