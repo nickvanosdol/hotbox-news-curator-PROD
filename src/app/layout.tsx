@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chewy.variable} ${inter.variable} antialiased bg-gradient-to-t to-[var(--color-primary-bg)] from-[#A22700]`}>
+        className={`${chewy.variable} ${inter.variable} antialiased bg-[var(--color-primary-bg)]`}>
         {children}
         {/* <div
           className="pointer-events-none fixed inset-0 -z-10 opacity-35"
