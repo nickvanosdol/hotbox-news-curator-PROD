@@ -99,7 +99,8 @@ export default function Home() {
               month: 'long',
               day: 'numeric',
             })}{' '}
-            | Curated today by:{' '}
+            <span className="text-[var(--color-accent-1)]">|</span> Curated
+            today by:{' '}
             <Link
               target="_blank"
               rel="noopener noreferrer"
