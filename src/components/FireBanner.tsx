@@ -27,7 +27,7 @@ export default function FireBanner({ logoPaths }: { logoPaths: string[] }) {
             key={i}
             alt="Tuple"
             src={logoPath}
-            className="h-8 max-sm:mx-auto sm:h-7 lg:h-10"
+            className="h-8 max-sm:mx-auto sm:h-7 lg:h-10 hover:[transform:rotateY(180deg)] text-white"
           />
         ))}
       </motion.div>

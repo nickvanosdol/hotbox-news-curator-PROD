@@ -31,14 +31,6 @@ function NewsGrid() {
             <article
               key={article.id}
               className="group flex flex-col items-start justify-between">
-              {/* <div className="relative w-full">
-                <img
-                  alt=""
-                  src={post.imageUrl}
-                  className="aspect-video w-full bg-gray-100 object-cover h-20 object-center grayscale group-hover:grayscale-0"
-                />
-                <div className="absolute inset-0 ring-1 ring-gray-900/10 ring-inset" />
-              </div> */}
               <div className="max-w-xl">
                 <div className="mt-2 flex items-center gap-x-4 text-xs">
                   <time
@@ -46,7 +38,7 @@ function NewsGrid() {
                     className="text-[var(--color-secondary-text)]">
                     {article.date}
                   </time>
-                  <div className="relative z-10 border-1 rounded-md group-hover:shadow-sm group-hover:bg-[var(--color-accent-1)] shadow-md px-2 py-1 font-medium text-[var(--color-secondary-text)]">
+                  <div className="relative z-10 border-1 rounded-md group-hover:shadow-sm lg:group-hover:bg-[var(--color-accent-1)] bg-[var(--color-accent-1)] lg:bg-[var(--color-secondary-bg)] shadow-md px-2 py-1 font-medium text-[var(--color-secondary-text)]">
                     {article.tag}
                   </div>
                 </div>
@@ -68,22 +60,6 @@ function NewsGrid() {
                   {article.description}
                 </p>
                 {/* <ReactionCounter /> */}
-                {/* <div className='relative mt-8 flex items-center gap-x-4'>
-                  <img
-                    alt=''
-                    src={post.author.imageUrl}
-                    className='size-10 rounded-full bg-gray-100'
-                  />
-                  <div className='text-sm/6'>
-                    <p className='font-semibold text-gray-900'>
-                      <a href={post.author.href}>
-                        <span className='absolute inset-0' />
-                        {post.author.name}
-                      </a>
-                    </p>
-                    <p className='text-gray-600'>{post.author.role}</p>
-                  </div>
-                </div> */}
               </div>
             </article>
           ))}
@@ -105,13 +81,6 @@ export default function Home() {
             <h2 className="hover:text-[var(--color-accent-1)] text-4xl mt-3 font-semibold tracking-widest text-[var(--color-secondary-bg)] text-shadow-[4px_4px_0px_rgba(22,23,20,1)] font-chewy text-balance sm:text-5xl">
               [ hotbox ]{' '}
             </h2>
-            {/* <Image
-              className="w-10 sm:w-14 inline-block"
-              src="/svg/match.svg"
-              width="100"
-              height="100"
-              alt="Icon"
-            /> */}
           </div>
           <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] inline-flex gap-1">
             A reader-curated newsfeed from
@@ -189,31 +158,6 @@ export default function Home() {
           ]}
         />
         <NewsGrid />
-        {/* <FireBanner
-          logoPaths={[
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-            '/svg/cartoon-fire.svg',
-          ]}
-        /> */}
       </section>
       <Footer />
       {/* <PartyCounter /> */}
