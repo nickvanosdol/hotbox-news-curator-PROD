@@ -135,51 +135,51 @@ export const articles = [
         'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABQElEQVR4AX3LIYyDMBiG4c/XoC+TczN4FHpeMI/CBz0fBN6g5lDo+ilUfarLAZTCb3eUdsvdCV7Rpt+Tgg7CetAxLu/sy15EtPrpg0TG2F01paB/SDKPorSS6+tVgnuF2VvlCYwBSMpHjOu87KtHumOLBYE9EY0eZ5sxN9yqLNqEBQwFzXtwFxXnF/HyWcZfCDJl/qBR9yZOZ5lzWT/J2wztIo4Tz4CGhDTa59EIIG8vbMPqSR+c9pYc4GrDukDA58nlUKsvhtbiIwFKoz2ONq0QuJ/NkFbLqKZ9djhZLCzW1MqV8/k3bjsLxQWJMK1UZ6EdDnsmR4A4E8tKgl/PatxXj1qABQjzhlcJUBi3onfN9aYMe6Ea3IjeZ/gZzmM5+Q3f7yb1SEOEad0N78mir9djp7pJ9/5t8SB0Bx2jOugHUdRcAiPWOf8AAAAASUVORK5CYII=',
     },
   },
-  {
-    id: 10,
-    title: 'Space Tourism Industry Reaches New Milestone',
-    href: '#',
-    description:
-      'Commercial space companies have successfully completed over 100 civilian flights this year. Improved safety protocols and reduced costs are making space travel accessible to a broader range of adventurous travelers.',
-    date: 'May 5, 2025',
-    datetime: '2025-05-05',
-    tag: 'Space',
-    source: {
-      name: 'Space News',
-      favicon:
-        'https://subscribe.keepcool.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkeep-cool-logo.7e7b4253.png&w=1920&q=75',
-    },
-  },
-  {
-    id: 11,
-    title: 'Artificial Meat Production Scales to Meet Global Demand',
-    href: '#',
-    description:
-      'Lab-grown meat facilities are expanding production capacity to supply major restaurant chains. This sustainable protein alternative promises to reduce environmental impact while meeting growing global food demands.',
-    date: 'May 3, 2025',
-    datetime: '2025-05-03',
-    tag: 'Food Tech',
-    source: {
-      name: 'Food & Wine',
-      favicon:
-        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABQElEQVR4AX3LIYyDMBiG4c/XoC+TczN4FHpeMI/CBz0fBN6g5lDo+ilUfarLAZTCb3eUdsvdCV7Rpt+Tgg7CetAxLu/sy15EtPrpg0TG2F01paB/SDKPorSS6+tVgnuF2VvlCYwBSMpHjOu87KtHumOLBYE9EY0eZ5sxN9yqLNqEBQwFzXtwFxXnF/HyWcZfCDJl/qBR9yZOZ5lzWT/J2wztIo4Tz4CGhDTa59EIIG8vbMPqSR+c9pYc4GrDukDA58nlUKsvhtbiIwFKoz2ONq0QuJ/NkFbLqKZ9djhZLCzW1MqV8/k3bjsLxQWJMK1UZ6EdDnsmR4A4E8tKgl/PatxXj1qABQjzhlcJUBi3onfN9aYMe6Ea3IjeZ/gZzmM5+Q3f7yb1SEOEad0N78mir9djp7pJ9/5t8SB0Bx2jOugHUdRcAiPWOf8AAAAASUVORK5CYII=',
-    },
-  },
-  {
-    id: 12,
-    title: 'Smart Cities Integration Creates Seamless Urban Experience',
-    href: '#',
-    description:
-      'IoT sensors and AI systems are transforming how cities manage traffic, utilities, and public services. Citizens report improved quality of life as urban infrastructure becomes more responsive and efficient.',
-    date: 'May 1, 2025',
-    datetime: '2025-05-01',
-    tag: 'Smart Cities',
-    source: {
-      name: 'MIT Technology Review',
-      favicon:
-        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABQElEQVR4AX3LIYyDMBiG4c/XoC+TczN4FHpeMI/CBz0fBN6g5lDo+ilUfarLAZTCb3eUdsvdCV7Rpt+Tgg7CetAxLu/sy15EtPrpg0TG2F01paB/SDKPorSS6+tVgnuF2VvlCYwBSMpHjOu87KtHumOLBYE9EY0eZ5sxN9yqLNqEBQwFzXtwFxXnF/HyWcZfCDJl/qBR9yZOZ5lzWT/J2wztIo4Tz4CGhDTa59EIIG8vbMPqSR+c9pYc4GrDukDA58nlUKsvhtbiIwFKoz2ONq0QuJ/NkFbLqKZ9djhZLCzW1MqV8/k3bjsLxQWJMK1UZ6EdDnsmR4A4E8tKgl/PatxXj1qABQjzhlcJUBi3onfN9aYMe6Ea3IjeZ/gZzmM5+Q3f7yb1SEOEad0N78mir9djp7pJ9/5t8SB0Bx2jOugHUdRcAiPWOf8AAAAASUVORK5CYII=',
-    },
-  },
+  // {
+  //   id: 10,
+  //   title: 'Space Tourism Industry Reaches New Milestone',
+  //   href: '#',
+  //   description:
+  //     'Commercial space companies have successfully completed over 100 civilian flights this year. Improved safety protocols and reduced costs are making space travel accessible to a broader range of adventurous travelers.',
+  //   date: 'May 5, 2025',
+  //   datetime: '2025-05-05',
+  //   tag: 'Space',
+  //   source: {
+  //     name: 'Space News',
+  //     favicon:
+  //       'https://subscribe.keepcool.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkeep-cool-logo.7e7b4253.png&w=1920&q=75',
+  //   },
+  // },
+  // {
+  //   id: 11,
+  //   title: 'Artificial Meat Production Scales to Meet Global Demand',
+  //   href: '#',
+  //   description:
+  //     'Lab-grown meat facilities are expanding production capacity to supply major restaurant chains. This sustainable protein alternative promises to reduce environmental impact while meeting growing global food demands.',
+  //   date: 'May 3, 2025',
+  //   datetime: '2025-05-03',
+  //   tag: 'Food Tech',
+  //   source: {
+  //     name: 'Food & Wine',
+  //     favicon:
+  //       'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABQElEQVR4AX3LIYyDMBiG4c/XoC+TczN4FHpeMI/CBz0fBN6g5lDo+ilUfarLAZTCb3eUdsvdCV7Rpt+Tgg7CetAxLu/sy15EtPrpg0TG2F01paB/SDKPorSS6+tVgnuF2VvlCYwBSMpHjOu87KtHumOLBYE9EY0eZ5sxN9yqLNqEBQwFzXtwFxXnF/HyWcZfCDJl/qBR9yZOZ5lzWT/J2wztIo4Tz4CGhDTa59EIIG8vbMPqSR+c9pYc4GrDukDA58nlUKsvhtbiIwFKoz2ONq0QuJ/NkFbLqKZ9djhZLCzW1MqV8/k3bjsLxQWJMK1UZ6EdDnsmR4A4E8tKgl/PatxXj1qABQjzhlcJUBi3onfN9aYMe6Ea3IjeZ/gZzmM5+Q3f7yb1SEOEad0N78mir9djp7pJ9/5t8SB0Bx2jOugHUdRcAiPWOf8AAAAASUVORK5CYII=',
+  //   },
+  // },
+  // {
+  //   id: 12,
+  //   title: 'Smart Cities Integration Creates Seamless Urban Experience',
+  //   href: '#',
+  //   description:
+  //     'IoT sensors and AI systems are transforming how cities manage traffic, utilities, and public services. Citizens report improved quality of life as urban infrastructure becomes more responsive and efficient.',
+  //   date: 'May 1, 2025',
+  //   datetime: '2025-05-01',
+  //   tag: 'Smart Cities',
+  //   source: {
+  //     name: 'MIT Technology Review',
+  //     favicon:
+  //       'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABQElEQVR4AX3LIYyDMBiG4c/XoC+TczN4FHpeMI/CBz0fBN6g5lDo+ilUfarLAZTCb3eUdsvdCV7Rpt+Tgg7CetAxLu/sy15EtPrpg0TG2F01paB/SDKPorSS6+tVgnuF2VvlCYwBSMpHjOu87KtHumOLBYE9EY0eZ5sxN9yqLNqEBQwFzXtwFxXnF/HyWcZfCDJl/qBR9yZOZ5lzWT/J2wztIo4Tz4CGhDTa59EIIG8vbMPqSR+c9pYc4GrDukDA58nlUKsvhtbiIwFKoz2ONq0QuJ/NkFbLqKZ9djhZLCzW1MqV8/k3bjsLxQWJMK1UZ6EdDnsmR4A4E8tKgl/PatxXj1qABQjzhlcJUBi3onfN9aYMe6Ea3IjeZ/gZzmM5+Q3f7yb1SEOEad0N78mir9djp7pJ9/5t8SB0Bx2jOugHUdRcAiPWOf8AAAAASUVORK5CYII=',
+  //   },
+  // },
   // More posts...
 ];
 

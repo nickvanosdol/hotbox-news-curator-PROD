@@ -7,6 +7,7 @@ import Head from 'next/head';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import FireBanner from '@/components/FireBanner';
+import { Gradient } from '@/components/Gradient';
 // import ReactionCounter from '@/components/ReactionCounter';
 
 const paragraph =
@@ -15,7 +16,7 @@ const words = paragraph.split(' ');
 
 function NewsGrid() {
   return (
-    <div className="py-4 my-4 sm:py-4 font-inter">
+    <div className="py-4 my-4 sm:py-4 font-outfit">
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative mx-auto p-6 rounded-tl-3xl shadow-xl rounded-br-3xl text-[var(--color-primary-text)] border-2 bg-[var(--color-secondary-bg)] border-[var(--color-border)] grid max-w-2xl grid-cols-1 gap-x-12 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div
@@ -71,7 +72,7 @@ function NewsGrid() {
 
 export default function Home() {
   return (
-    <main className="cursor-fire">
+    <main className="cursor-fire relative py-5 rounded-4xl overflow-hidden">
       <Head>
         <title>Hi</title>
       </Head>
@@ -82,7 +83,7 @@ export default function Home() {
               [ hotbox ]{' '}
             </h2>
           </div>
-          <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] px-2">
+          <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] mx-4">
             A reader-curated newsfeed from{' '}
             <a
               href="https://subscribe.keepcool.co"
@@ -92,7 +93,7 @@ export default function Home() {
               Keep Cool.
             </a>
           </p>
-          <p className="mt-8 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-[var(--color-secondary-bg)] px-2">
+          <p className="mt-8 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-[var(--color-secondary-bg)] mx-4">
             {new Date().toLocaleString('en-US', {
               weekday: 'long',
               year: 'numeric',
@@ -161,6 +162,7 @@ export default function Home() {
         <NewsGrid />
       </section>
       <Footer />
+      <Gradient className="absolute inset-2 bottom-2 rounded-4xl ring-1 ring-black/5 ring-inset -z-100" />
       {/* <PartyCounter /> */}
     </main>
   );
