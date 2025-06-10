@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Chewy } from 'next/font/google';
+import { Outfit, Chewy } from 'next/font/google';
 import '@/styles/globals.css';
 
 const chewy = Chewy({
@@ -8,8 +8,8 @@ const chewy = Chewy({
   weight: ['400'],
 });
 
-const inter = Inter({
-  variable: '--font-inter',
+const outfit = Outfit({
+  variable: '--font-outfit',
   subsets: ['latin'],
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chewy.variable} ${inter.variable} antialiased bg-[var(--color-primary-bg)]`}>
+        className={`${chewy.variable} ${outfit.variable} antialiased bg-white`}>
         {children}
         {/* <div
           className="pointer-events-none fixed inset-0 -z-10 opacity-35"

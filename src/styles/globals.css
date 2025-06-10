@@ -9,6 +9,11 @@
   --color-secondary-bg: rgba(227, 224, 211, 1);
   --color-accent-1: rgba(114, 225, 199, 1);
   --color-accent-2: rgba(92, 20, 216, 1);
+  /* --color-gradient-1: rgba(); */
+  --color-gradient-3: #a72800;
+  --color-gradient-2: #cd3b0d;
+  /* --color-gradient-2: rgba(); */
+  --color-gradient-1: rgba(253, 82, 28, 1);
   --color-border: rgba(22, 23, 20, 1);
   /* #endregion  /**======== Primary Color =========== */
 }
