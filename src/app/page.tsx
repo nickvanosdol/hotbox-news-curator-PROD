@@ -49,7 +49,7 @@ function NewsGrid() {
                     <img
                       alt="article link favicon"
                       src={article.source.favicon}
-                      className="size-5 bg-gray-100"
+                      className="size-6"
                     />
                     <UnderlineLink href={article.href}>
                       <span className="absolute inset-0 hover:cursor-newtab" />
@@ -120,7 +120,7 @@ export default function Home() {
               }}
               aria-hidden="true"
             />
-            <span className="font-bold">Today&apos;s hotbox:</span>{' '}
+            <span className="font-bold mr-1">Today&apos;s hotbox:</span>
             {words.map((word, idx) => (
               <span
                 key={idx}
