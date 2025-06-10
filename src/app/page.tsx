@@ -3,7 +3,7 @@
 import { articles } from './constant/feed-content';
 import UnderlineLink from '@/components/UnderlineLink';
 import Head from 'next/head';
-// import PartyCounter from '@/components/PartyCounter';
+import PartyCounter from '@/components/PartyCounter';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import FireBanner from '@/components/FireBanner';
@@ -163,7 +163,7 @@ export default function Home() {
       </section>
       <Footer />
       <Gradient className="absolute inset-2 bottom-2 rounded-4xl ring-1 ring-black/5 ring-inset -z-100" />
-      {/* <PartyCounter /> */}
+      <PartyCounter />
     </main>
   );
 }
