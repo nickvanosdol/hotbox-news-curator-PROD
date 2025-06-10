@@ -8,11 +8,11 @@ export default function FireBanner({ logoPaths }: { logoPaths: string[] }) {
 
   return (
     <div
-      className="overflow-hidden lg:max-w-7xl mx-auto"
+      className="flex justify-center overflow-hidden w-[calc(100%-18px)] max-w-7xl mx-auto"
       ref={containerRef}>
       <motion.div
         className="flex gap-20"
-        animate={{ x: ['0%', '-150%'] }} // Adjust end value depending on length of ribbon to achieve smooth looping
+        animate={{ x: ['0%', '-50%'] }} // Adjust end value depending on length of ribbon to achieve smooth looping
         transition={{
           x: {
             repeat: Infinity,
@@ -27,7 +27,7 @@ export default function FireBanner({ logoPaths }: { logoPaths: string[] }) {
             key={i}
             alt="Tuple"
             src={logoPath}
-            className="h-8 max-sm:mx-auto sm:h-7 lg:h-10 hover:[transform:rotateY(180deg)] text-white"
+            className="h-8 max-sm:mx-auto lg:h-10 hover:[transform:rotateY(180deg)]"
           />
         ))}
       </motion.div>
