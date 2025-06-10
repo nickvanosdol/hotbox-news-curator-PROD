@@ -7,7 +7,7 @@ module.exports = {
       //   },
       fontFamily: {
         chewy: ['var(--font-chewy)'],
-        inter: ['var(--font-inter)'],
+        outfit: ['var(--font-outfit)'],
       },
       keyframes: {
         appear: {

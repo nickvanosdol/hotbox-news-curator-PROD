@@ -16,7 +16,7 @@ const words = paragraph.split(' ');
 
 function NewsGrid() {
   return (
-    <div className="py-4 my-4 sm:py-4 font-outfit">
+    <div className="py-4 my-4 sm:py-4">
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative mx-auto p-6 rounded-tl-3xl shadow-xl rounded-br-3xl text-[var(--color-primary-text)] border-2 bg-[var(--color-secondary-bg)] border-[var(--color-border)] grid max-w-2xl grid-cols-1 gap-x-12 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div
@@ -72,7 +72,7 @@ function NewsGrid() {
 
 export default function Home() {
   return (
-    <main className="cursor-fire relative py-5 rounded-4xl overflow-hidden">
+    <main className="cursor-fire relative py-5 rounded-4xl overflow-hidden font-outfit">
       <Head>
         <title>Hi</title>
       </Head>
