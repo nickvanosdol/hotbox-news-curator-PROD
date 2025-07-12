@@ -87,7 +87,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-2 text-shadow-[1px_1px_0px_rgba(22,23,20,1)] font-bold text-sm text-[var(--color-secondary-bg)] mx-4">
-            A reader-curated newsfeed from{' '}
+            A curated newsfeed from{' '}
             <a
               href="https://subscribe.keepcool.co"
               target="_blank"

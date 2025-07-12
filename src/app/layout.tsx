@@ -15,7 +15,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: '[ hotbox ]',
-  description: 'A reader-curated newsfeed from Keep Cool.',
+  description: 'A curated newsfeed from Keep Cool.',
 };
 
 export default function RootLayout({
