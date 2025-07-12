@@ -9,9 +9,9 @@ import { getInoreaderArticles } from '../../inoreader/queries';
 import { extractPreview, formatDateToLong } from '@/lib/helpers';
 // import ReactionCounter from '@/components/ReactionCounter';
 
-const paragraph =
-  "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
-const words = paragraph.split(' ');
+// const paragraph =
+//   "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
+// const words = paragraph.split(' ');
 
 async function NewsGrid() {
   const articles = await getInoreaderArticles();
@@ -109,11 +109,11 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
-              href="https://www.linkedin.com/in/brettcornick/">
-              Brett Cornick
+              href="https://www.linkedin.com/in/nicholasvanosdol/">
+              Nick van Osdol
             </Link>
           </p>
-          <div className="mt-6 mb-8 mx-2 relative layout lg:mx-0 text-lg/8 rounded-tl-3xl rounded-br-3xl shadow-xl text-[var(--color-primary-text)] border-2 p-6 bg-[var(--color-secondary-bg)] text-left flex flex-wrap gap-0">
+          {/* <div className="mt-6 mx-2 relative layout lg:mx-0 text-lg/8 rounded-tl-3xl rounded-br-3xl shadow-xl text-[var(--color-primary-text)] border-2 p-6 bg-[var(--color-secondary-bg)] text-left flex flex-wrap gap-0">
             <div
               className="pointer-events-none absolute bottom-0 top-0 left-0 right-0 opacity-40"
               style={{
@@ -135,7 +135,7 @@ export default function Home() {
                 {word}&nbsp;
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
         <FireBanner
           logoPaths={[

@@ -8,7 +8,7 @@ export default function FireBanner({ logoPaths }: { logoPaths: string[] }) {
 
   return (
     <div
-      className="flex justify-center overflow-hidden w-[calc(100%-18px)] max-w-7xl mx-auto"
+      className="mt-8 flex justify-center overflow-hidden w-[calc(100%-18px)] max-w-7xl mx-auto"
       ref={containerRef}>
       <motion.div
         className="flex gap-20"
