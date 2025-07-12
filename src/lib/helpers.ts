@@ -31,7 +31,7 @@ export function extractPreview(content_html: string): string {
 
   for (const sentence of sentences) {
     if (
-      sentence.replace(/\s/g, '').length > 20 &&
+      sentence.replace(/\s/g, '').length > 5 &&
       !/published online|doi|copyright|all rights reserved|©|received:|accepted:|journal|license|editor|supplementary|affiliation|volume|issue|pp\./i.test(
         sentence
       )

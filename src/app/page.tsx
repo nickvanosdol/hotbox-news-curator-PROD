@@ -60,7 +60,7 @@ async function NewsGrid() {
                     </UnderlineLink>
                   </h3>
                 </div>
-                <p className="mt-2 line-clamp-2 text-sm/6 text-[var(--color-secondary-text)]">
+                <p className="mt-2 line-clamp-3 text-sm/6 text-[var(--color-secondary-text)]">
                   {extractPreview(article.content_html)}
                 </p>
                 {/* <ReactionCounter /> */}
