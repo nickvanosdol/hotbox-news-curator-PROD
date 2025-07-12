@@ -1,20 +1,21 @@
-// import Image from 'next/image';
-
-import { articles } from './constant/feed-content';
 import UnderlineLink from '@/components/UnderlineLink';
 import Head from 'next/head';
-import PartyCounter from '@/components/PartyCounter';
+// import PartyCounter from '@/components/PartyCounter';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import FireBanner from '@/components/FireBanner';
 import { Gradient } from '@/components/Gradient';
+import { getInoreaderArticles } from '../../inoreader/queries';
+import { extractPreview, formatDateToLong } from '@/lib/helpers';
 // import ReactionCounter from '@/components/ReactionCounter';
 
 const paragraph =
   "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
 const words = paragraph.split(' ');
 
-function NewsGrid() {
+async function NewsGrid() {
+  const articles = await getInoreaderArticles();
+
   return (
     <div className="py-4 my-4 sm:py-4">
       <div className="mx-auto max-w-7xl px-6">
@@ -30,17 +31,19 @@ function NewsGrid() {
           />
           {articles.map(article => (
             <article
-              key={article.id}
+              key={article.url}
               className="group flex flex-col items-start justify-between">
               <div className="max-w-xl">
                 <div className="mt-2 flex items-center gap-x-4 text-xs">
-                  <time
-                    dateTime={article.datetime}
+                  <p
+                    // dateTime={article.date_published}
                     className="text-[var(--color-secondary-text)]">
-                    {article.date}
-                  </time>
+                    {formatDateToLong(article.date_published)}
+                  </p>
                   <div className="relative z-10 border-1 rounded-md group-hover:shadow-sm lg:group-hover:bg-[var(--color-accent-1)] bg-[var(--color-accent-1)] lg:bg-[var(--color-secondary-bg)] shadow-md px-2 py-1 font-medium text-[var(--color-secondary-text)]">
-                    {article.tag}
+                    {article.tags && article.tags.length > 0
+                      ? article.tags[0]
+                      : 'Misc'}
                   </div>
                 </div>
                 <div className="relative">
@@ -48,17 +51,17 @@ function NewsGrid() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       alt="article link favicon"
-                      src={article.source.favicon}
+                      src={article.favicon}
                       className="size-6"
                     />
-                    <UnderlineLink href={article.href}>
+                    <UnderlineLink href={article.url}>
                       <span className="absolute inset-0 hover:cursor-newtab" />
                       {article.title}
                     </UnderlineLink>
                   </h3>
                 </div>
                 <p className="mt-2 line-clamp-2 text-sm/6 text-[var(--color-secondary-text)]">
-                  {article.description}
+                  {extractPreview(article.content_html)}
                 </p>
                 {/* <ReactionCounter /> */}
               </div>
@@ -172,7 +175,7 @@ export default function Home() {
       </section>
       <Footer />
       <Gradient className="absolute inset-2 bottom-2 rounded-4xl ring-1 ring-black/5 ring-inset -z-100" />
-      <PartyCounter />
+      {/* <PartyCounter /> */}
     </main>
   );
 }
