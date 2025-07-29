@@ -38,6 +38,7 @@ export default function RootLayout({
           aria-hidden="true"
         />
         {children}
+        <Analytics />
         {/* <div
           className="pointer-events-none fixed inset-0 -z-10 opacity-35"
           style={{
