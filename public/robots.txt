@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /api/
+Disallow: /admin/
+
+# Host
+Host: https://hotbox.keepcool.co
+
+# Sitemaps
+Sitemap: https://hotbox.keepcool.co/sitemap.xml
