@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Outfit, Chewy } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import '@/styles/globals.css';
 
 const chewy = Chewy({
