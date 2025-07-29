@@ -7,13 +7,17 @@ export default function Footer() {
       © {new Date().getFullYear()} By{' '}
       <Link
         className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
-        href="https://subscribe.keepcool.co">
+        href="https://subscribe.keepcool.co"
+        target="_blank"
+        rel="noreferrer">
         Keep Cool
       </Link>
       . Site by{' '}
       <Link
         className="cursor-newtab border-dark border-b border-dotted hover:text-[var(--color-accent-1)]"
-        href="https://www.linkedin.com/in/brettcornick/">
+        href="https://www.linkedin.com/in/brettcornick/"
+        target="_blank"
+        rel="noreferrer">
         Brett Cornick
       </Link>
       .

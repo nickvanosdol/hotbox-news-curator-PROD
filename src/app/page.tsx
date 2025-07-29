@@ -17,7 +17,7 @@ async function NewsGrid() {
   return (
     <div className="py-4 my-4 sm:py-4">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="relative mx-auto p-6 rounded-tl-3xl shadow-xl rounded-br-3xl text-[var(--color-primary-text)] border-2 bg-[var(--color-secondary-bg)] border-[var(--color-border)] grid max-w-2xl grid-cols-1 gap-x-12 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="relative mx-auto p-6 rounded-3xl shadow-xl text-[var(--color-primary-text)] border-2 bg-[var(--color-secondary-bg)] border-[var(--color-border)] grid max-w-2xl grid-cols-1 gap-x-12 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div
             className="pointer-events-none absolute bottom-0 top-0 left-0 right-0 opacity-30"
             style={{

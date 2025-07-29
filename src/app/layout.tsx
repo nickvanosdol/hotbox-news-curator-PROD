@@ -17,6 +17,21 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: '[ hotbox ]',
   description: 'A curated newsfeed from Keep Cool.',
+  metadataBase: new URL('https://hotbox.keepcool.co'),
+  openGraph: {
+    title: 'Hotbox News Curator',
+    description: 'A curated newsfeed from Keep Cool.',
+    images: ['/card-preview.jpg'],
+    siteName: 'Keep Cool Newsletter',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hotbox News Curator',
+    description: 'A curated newsfeed from Keep Cool.',
+    images: ['/card-preview.jpg'],
+  },
 };
 
 export default function RootLayout({
