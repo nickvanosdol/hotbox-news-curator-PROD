@@ -1,13 +1,11 @@
 import UnderlineLink from '@/components/UnderlineLink';
 import Head from 'next/head';
-// import PartyCounter from '@/components/PartyCounter';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import FireBanner from '@/components/FireBanner';
 import { Gradient } from '@/components/Gradient';
 import { getInoreaderArticles } from '../../inoreader/queries';
 import { extractPreview, formatDateToLong } from '@/lib/helpers';
-// import ReactionCounter from '@/components/ReactionCounter';
 
 // const paragraph =
 //   "[ai generated] summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content ai generated summary of today's curated content";
