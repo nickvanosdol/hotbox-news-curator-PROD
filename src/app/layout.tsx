@@ -54,15 +54,6 @@ export default function RootLayout({
         />
         {children}
         <Analytics />
-        {/* <div
-          className="pointer-events-none fixed inset-0 -z-10 opacity-35"
-          style={{
-            backgroundImage: 'url("/svg/noise.svg")',
-            backgroundRepeat: 'repeat',
-            backgroundSize: '182px 182px',
-          }}
-          aria-hidden="true"
-        /> */}
       </body>
     </html>
   );
