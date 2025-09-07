@@ -1,3 +1,5 @@
+// Last updated: September 7, 2025
+
 import type { Metadata } from 'next';
 import { Outfit, Chewy } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
